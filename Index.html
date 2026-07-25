@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanaar Marketing V2</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Login -->
+
+<div class="login-box" id="loginBox">
+
+<h1>Dhanaar Marketing</h1>
+
+<p>Earn • Learn • Grow</p>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name">
+
+<button onclick="login()">
+Start Game
+</button>
+
+</div>
+
+<!-- Dashboard -->
+
+<div
+class="dashboard"
+id="dashboard"
+style="display:none;">
+
+<h2>
+Welcome
+<span id="username"></span>
+</h2>
+
+<!-- Profile -->
+
+<div class="profile-card">
+
+<h3>👤 Player Profile</h3>
+
+<p>
+<b>Name :</b>
+<span id="profileName"></span>
+</p>
+
+<p>
+<b>Referral :</b>
+<span id="profileReferral"></span>
+</p>
+
+<p>
+<b>Level :</b>
+<span id="profileLevel">1</span>
+</p>
+
+<p>
+<b>Coins :</b>
+<span id="profileCoins">0</span>
+</p>
+
+</div>
+
+<hr>
+
+<h3>⭐ Points</h3>
+
+<div id="points">
+0
+</div>
+
+<h3>🪙 Coins</h3>
+
+<div id="coins">
+0
+</div>
+
+<h3>📈 XP</h3>
+
+<div id="xp">
+0 / 100
+</div>
+
+<h3>🏆 Level</h3>
+
+<div id="level">
+1
+</div>
+
+<button onclick="dailyTask()">
+✅ Daily Task (+10)
+</button>
+
+<button onclick="shareGame()">
+🎁 Referral Bonus
+</button>
+
+<h3>Your Referral Code</h3>
+
+<input
+type="text"
+id="refCode"
+readonly>
+
+<button onclick="copyReferral()">
+Copy Referral Code
+</button>
+
+<hr>
+
+<h3>
+📋 Today's Tasks
+</h3>
+<!-- WhatsApp -->
+<button onclick="shareOnWhatsApp()">
+📲 Complete WhatsApp Task
+</button>
+
+<!-- TikTok -->
+<button onclick="visitTikTok()">
+🎵 Complete TikTok Task
+</button>
+
+<!-- YouTube -->
+<button onclick="watchPromoVideo()">
+▶️ Watch YouTube Video
+</button>
+
+<!-- Daily Reward -->
+<button onclick="claimDailyReward()">
+🎁 Claim Daily Reward
+</button>
+<div class="task">
+    <p>🌐 Visit Dhanaar Website (+25)</p>
+    <button onclick="visitWebsite()">Visit</button>
+</div>
+
+<!-- Lucky Spin -->
+<button onclick="spinWheel()">
+🎡 Lucky Spin
+</button>
+
+<hr>
+
+<h3>🎁 Gift Code</h3>
+
+<input
+type="text"
+id="giftCode"
+placeholder="Enter Gift Code">
+
+<button onclick="redeemGift()">
+Redeem Gift Code
+</button>
+
+<hr>
+
+<div class="withdraw-box">
+
+<h3>💸 Withdrawal</h3>
+
+<input
+type="text"
+id="account"
+placeholder="JazzCash / Easypaisa Number">
+
+<button onclick="withdraw()">
+Withdraw 500 Coins
+</button>
+
+</div>
+
+<hr>
+<h3>🏆 Leaderboard</h3>
+
+<div id="leaderboard">
+
+<p>🥇 You</p>
+
+<p>Level : <span id="leaderLevel">1</span></p>
+
+<p>Coins : <span id="leaderCoins">0</span></p>
+
+<p>Points : <span id="leaderPoints">0</span></p>
+
+</div>
+
+<hr>
+
+<h3>🥇 Achievements</h3>
+
+<div id="badges">
+
+<p>No Badges Yet</p>
+
+</div>
+
+<hr>
+
+<h3>📜 Transaction History</h3>
+
+<div id="history">
+
+<p>No Transactions Yet</p>
+
+</div>
+
+</div>
+
+</div>
+<script type="module" src="script.js"></script
+</body>
+</html>
