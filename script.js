@@ -360,8 +360,8 @@ function checkBadges() {
 // Start
 window.onload = function () {
 
-    generateReferral();
-    updateScreen();
+    //generateReferral();
+   // updateScreen();
 
 };
 window.login = login;
