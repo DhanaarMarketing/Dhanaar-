@@ -1,11 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-import {
-  getAuth,
-  signInAnonymously
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-import {
-  getDatabase
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
+import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAdkGge9jBCnLXZuWiXfeK7dubQDrEpvII",
@@ -18,22 +13,6 @@ const firebaseConfig = {
   measurementId: "G-DSGVXKSXVE"
 };
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
-
-const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-export const db = getDatabase(app);
-
-signInAnonymously(auth)
-  .then(() => {
-    console.log("Firebase Login Success");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
