@@ -321,7 +321,7 @@ function redeemGift() {
 }
 
 // Withdrawal
-function withdraw() {
+async function withdraw() {
 
     const account = document.getElementById("account").value.trim();
 
