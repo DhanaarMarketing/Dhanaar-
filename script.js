@@ -336,7 +336,15 @@ function withdraw() {
     }
 
     coins -= 500;
-
+  
+await push(ref(db, "withdrawals"), {
+  uid: auth.currentUser.uid,
+  name: document.getElementById("profileName").innerText,
+  account: account,
+  coins: 500,
+  status: "Pending",
+  date: new Date().toISOString()
+});
     addHistory("💸 Withdrawal Request");
 
     saveData();
