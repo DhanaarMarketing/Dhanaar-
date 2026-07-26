@@ -3,11 +3,12 @@
 // SCRIPT.JS - PART 1
 // ==========================
 
-import { auth, db } from "./firebase.js";
 import {
   ref,
   set,
-  get
+  get,
+  update,
+  push
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
 
 // Referral Code
